@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Titulek"]</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+        <nav>
+            <div class="nav-container">
+                <a asp-controller="Home" asp-action="Index">Domů</a>
+                <a asp-controller="Kariera" asp-action="Index">Kariéra</a>
+                <a asp-controller="Statistiky" asp-action="Index">Statistiky</a>
+                <a asp-controller="Zajimavosti" asp-action="Index">Galerie</a>
+                <a asp-controller="Kviz" asp-action="Index">Videa</a>
+                <a asp-controller="Odkazy" asp-action="Index">Kontakt</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            @RenderBody()
+        </div>
+
+</body>
+</html>
